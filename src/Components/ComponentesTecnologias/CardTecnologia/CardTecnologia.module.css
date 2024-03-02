@@ -1,0 +1,23 @@
+.container{
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+}
+
+.card {
+  display: flex;
+  background-color: var(---fundo-card);
+  border-radius: 8px;
+  padding: 130px 64px;
+  gap: 64px;
+}
+
+.card .subtitulo {
+  font-size: 36px;
+  color: var(---texto-apagado);
+}
+
+.card ul{
+  display: flex;
+  gap:32px
+}

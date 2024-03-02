@@ -1,0 +1,15 @@
+
+.apresentacao div  {
+  padding: 200px 0;
+  max-width: 694px;
+}
+
+.apresentacao div span {
+  color: #fff;
+  font-size: 48px;
+  font-weight: bold;
+}
+
+.apresentacao div span strong {
+  color: #A400CD;
+}
