@@ -1,6 +1,7 @@
 import Link from "next/link";
 import "./globals.css";
 import NavBar from "@/Components/NavBar/NavBar";
+import Footer from "@/Components/Footer/Footer";
 
 export const metadata = {
   title: "Home - Portifolio",
@@ -13,6 +14,7 @@ export default function RootLayout({ children }) {
       <body>
         <NavBar />
         {children}
+        <Footer />
       </body>
     </html>
   );
