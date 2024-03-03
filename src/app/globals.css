@@ -6,9 +6,19 @@
   ---cor-fundo: #151515;
   ---cor-texto: #f1f1f1;
   ---cor-titulo: #fff;
-  ---titulo-section: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(67,86,255,1) 21%, rgba(255,0,0,1) 100%);
+  ---titulo-section: linear-gradient(270deg, hsla(302, 100%, 46%, 1) 19%, hsla(258, 100%, 67%, 1) 79%);
   ---fundo-card: #191919;
   ---texto-apagado: #747474;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active{
+  -webkit-box-shadow: 0 0 0 30px #242424 inset !important;
+  -webkit-text-fill-color: rgb(255, 255, 255) !important;
+  outline: none;
+  border: none;
 }
 
 body{

@@ -1,9 +1,14 @@
 
 .titulo {
+  max-width: 1000px;
   font-size: 48px;
   background: var(---titulo-section);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  text-align: center;
   line-height: 150%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  text-align: center;
 }

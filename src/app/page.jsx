@@ -4,6 +4,7 @@ import Apresentacao from "@/Components/HomeSections/Apresentacao/Apresentacao";
 import SobreMim from "@/Components/HomeSections/SobreMim/SobreMim";
 import Tecnologias from "@/Components/HomeSections/Tecnologias/Tecnologias";
 import PrincipaisProjetos from "@/Components/HomeSections/PrincipaisProjetos/PrincipaisProjetos";
+import Contato from "@/Components/HomeSections/Contato/Contato";
 
 export default function Home() {
   return (
@@ -12,6 +13,8 @@ export default function Home() {
       <SobreMim />
       <Tecnologias />
       <PrincipaisProjetos />
+      <Contato />
+      
     </main>
   );
 }
