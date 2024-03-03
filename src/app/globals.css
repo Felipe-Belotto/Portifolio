@@ -4,8 +4,8 @@
 
 :root {
   ---cor-fundo: #151515;
-  --cor-texto: #f1f1f1;
-  --cor-titulo: #fff;
+  ---cor-texto: #f1f1f1;
+  ---cor-titulo: #fff;
   ---titulo-section: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(67,86,255,1) 21%, rgba(255,0,0,1) 100%);
   ---fundo-card: #191919;
   ---texto-apagado: #747474;
@@ -16,7 +16,7 @@ body{
   font-family: "Raleway", sans-serif;
   font-size: 16px;
   background-color: var(---cor-fundo);
-  color: var(--cor-texto);
+  color: var(---cor-texto);
   padding: 0 120px;
   display: flex;
   flex-direction: column;

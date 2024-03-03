@@ -1,0 +1,9 @@
+
+.titulo {
+  font-size: 48px;
+  background: var(---titulo-section);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+  line-height: 150%;
+}

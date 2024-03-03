@@ -1,0 +1,72 @@
+.card{
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  background-color: var(---fundo-card);
+  border-radius: 8px;
+  margin: 0 0 64px 0;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.card img {
+  width: 100%;
+  height: 300px;
+  border-radius: 8px 8px 0 0;
+  opacity: 90%;
+}
+
+.conteudo {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 16px;
+}
+
+.card .conteudo .nome {
+  color: var(---cor-titulo);
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.card .conteudo .descricao {
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.buttons__container{
+  display: flex;
+  gap: 16px;
+  padding: 16px 0;
+}
+
+.buttons__container .card__button{
+  width:150px;
+  height: 40px;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.7);
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.buttons__container .card__button:nth-child(1) {
+  background-color: rgba(16, 16, 16, 0.500);
+  color: var(--cor-texto);
+}
+
+.buttons__container .card__button:nth-child(1):hover {
+  background-color: rgba(61, 61, 61, 0.556);
+}
+
+.buttons__container .card__button:nth-child(2){
+  background-color: rgba(38, 38, 38, 0.500);
+  color: var(--cor-titulo);
+}
+
+.buttons__container .card__button:nth-child(2):hover {
+  background-color: rgba(61, 61, 61, 0.556);
+}

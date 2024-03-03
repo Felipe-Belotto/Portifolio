@@ -2,10 +2,11 @@ import React from 'react'
 
 import styles from './Tecnologias.module.css'
 import CardTecnologia from '@/Components/ComponentesTecnologias/CardTecnologia/CardTecnologia'
+import TituloSection from '@/Components/TituloSection/TituloSection'
 export default function Tecnologias() {
   return (
     <section className={styles.tecnologias}>
-      <h1 className={styles.titulo}>Tecnologias</h1>
+      <TituloSection texto="Tecnologias" />
   
       <CardTecnologia/>
     </section>

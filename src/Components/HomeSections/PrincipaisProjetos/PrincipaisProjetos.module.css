@@ -1,0 +1,33 @@
+.container {
+  display: flex;
+  gap: 64px;
+  flex-direction: column;
+}
+
+.projetos {
+  width: 1440px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: space-around; 
+}
+
+.buttonTodosProjetos{
+  width: 500px;
+  height: 80px;
+  font-size: 36px;
+  text-decoration: none;
+  color: var(---texto-apagado);
+  border-radius: 8px;
+  background-color: var(---fundo-card);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
+  align-self: center;
+}
+
+.buttonTodosProjetos:hover {
+  background-color: #1c1c1c;
+  color: #fff;
+}
