@@ -1,6 +1,7 @@
-'use client';
-
-import React, { useRef, useState } from 'react'
+'use client'
+import React, { useEffect, useRef, useState } from 'react';
+import { motion } from 'framer-motion';
+import { useInView } from 'react-intersection-observer';
 
 import styles from './Contato.module.css'
 import TituloSection from '@/Components/TituloSection/TituloSection'
@@ -14,6 +15,14 @@ export default function Contato() {
   const[nome, setNome] = useState('')
   const[email, setEmail] = useState('')
   const[mensagem, setMensagem] = useState('')
+  const { ref, inView } = useInView({ threshold: 0 });
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    if (inView) {
+      setIsVisible(true);
+    }
+  }, [inView]);
 
   const form = useRef()
 
@@ -34,7 +43,7 @@ export default function Contato() {
   };
 
   return (
-    <section className={styles.contato}>
+    <motion.section ref={ref} animate={isVisible ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.5 }} initial={{ opacity: 0, scale: 0.5 }} transition={{ duration: 0.5 }} className={styles.contato}>
       <TituloSection texto="Vamos juntos desenvolver a solução ideal para você ?" />
 
       <div className={styles.container}>
@@ -46,6 +55,6 @@ export default function Contato() {
        </form>
       </div>
       
-    </section>
+    </motion.section>
   )
 }

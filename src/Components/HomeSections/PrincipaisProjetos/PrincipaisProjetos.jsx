@@ -1,6 +1,7 @@
 'use client'
-
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react';
+import { motion } from 'framer-motion';
+import { useInView } from 'react-intersection-observer';
 
 
 import styles from './PrincipaisProjetos.module.css'
@@ -42,9 +43,17 @@ export const ListaProjetosPrincipais = [
 export default function PrincipaisProjetos() {
 
   const [projetos, setProjetos] = useState(ListaProjetosPrincipais);
+  const { ref, inView } = useInView({ threshold: 0 });
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    if (inView) {
+      setIsVisible(true);
+    }
+  }, [inView]);
 
   return (
-    <div className={styles.container}>
+    <motion.div ref={ref} animate={isVisible ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.5 }} initial={{ opacity: 0, scale: 0.5 }} transition={{ duration: 0.5 }} className={styles.container}>
     <TituloSection texto="Projetos" />
     
     <div className={styles.projetos}>
@@ -61,6 +70,6 @@ export default function PrincipaisProjetos() {
     ))}
     </div>
     <Link href={"/projetos"} className={styles.buttonTodosProjetos}>Ver mais</Link>
-  </div>
+  </motion.div>
   )
 }
