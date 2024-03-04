@@ -3,12 +3,12 @@
   justify-content: space-between;
   align-items: center;
   min-width: 1440px;
-  min-height: 700px;
+  min-height: 850px;
 }
 
 .apresentacao span {
   padding: 200px 0;
-  max-width: 800px;
+  max-width: 680px;
   color: #fff;
   font-size: 48px;
   font-weight: bold;

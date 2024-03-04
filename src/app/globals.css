@@ -6,7 +6,7 @@
   ---cor-fundo: linear-gradient(45deg, hsla(0, 0%, 8%, 1) 0%, hsla(0, 0%, 10%, 1) 75%, hsla(0, 0%, 19%, 1) 99%);
   ---cor-texto: #f1f1f1;
   ---cor-titulo: #fff;
-  ---titulo-section: linear-gradient(270deg, hsla(302, 100%, 46%, 1) 19%, hsla(258, 100%, 67%, 1) 79%);
+  ---titulo-section: linear-gradient(270deg, rgba(235, 0, 184, 0.98) 19%, hsla(258, 100%, 67%, 1) 79%);
   ---fundo-card: #191919;
   ---texto-apagado: #747474;
 }
@@ -21,15 +21,20 @@ input:-webkit-autofill:active{
   border: none;
 }
 
+*{
+  font-family: 'Raleway', sans-serif;
+}
+
 body{
   width: 100vw;
-  font-family: "Raleway", sans-serif;
+  min-height: 100vh;
   font-size: 16px;
   background: var(---cor-fundo);
   color: var(---cor-texto);
   padding: 0 120px;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   align-items: center;
   overflow-x: hidden;
 }

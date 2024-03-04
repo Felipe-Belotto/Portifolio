@@ -8,14 +8,14 @@
   width: 1440px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
   align-content: space-around; 
 }
 
 .buttonTodosProjetos{
-  width: 500px;
+  width: 250px;
   height: 80px;
-  font-size: 36px;
+  font-size: 24px;
   text-decoration: none;
   color: var(---texto-apagado);
   border-radius: 8px;
