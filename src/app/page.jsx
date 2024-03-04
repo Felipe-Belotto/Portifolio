@@ -9,11 +9,21 @@ import Contato from "@/Components/HomeSections/Contato/Contato";
 export default function Home() {
   return (
     <main className={styles.main}>
+      <div className={styles.Apresentacao__container}>
       <Apresentacao />
+      </div>
+      <div className={styles.SobreMim__container}>
       <SobreMim />
+      </div>
+      <div className={styles.Tecnologias__container}>
       <Tecnologias />
+      </div>
+      <div className={styles.PrincipaisProjetos__container}>
       <PrincipaisProjetos />
+      </div>
+      <div className={styles.Contato__container}>
       <Contato />
+      </div>
       
     </main>
   );

@@ -1,19 +1,28 @@
 'use client'
 import React from 'react'
 import { motion } from "framer-motion"
-
+import { useLottie } from "lottie-react";
+import animacao from "../../../../public/animacao.json";
 import styles from './Apresentacao.module.css'
 
 export default function Apresentacao() {
+  const options = {
+    animationData: animacao,
+    loop: true
+  };
+
+  const { View } = useLottie(options);
   return (
-      <section className={styles.apresentacao}>
-       <motion.div  
-        initial={{ opacity: 0, scale: 0.5 }}
-        animate={{ opacity: 1, scale: 1 }}
-        transition={{ duration: 0.5 }}
-    >
+      <motion.section  
+      initial={{ opacity: 0, scale: 0.5 }}
+      animate={{ opacity: 1, scale: 1 }}
+      transition={{ duration: 0.5 }} className={styles.apresentacao}>
+  
       <span>Acredite no poder da <strong>tecnologia</strong> para transformar o mundo, e eu te ajudo a fazer isso acontecer.</span>
-      </motion.div>
-    </section>
+
+<div className={styles.animacao}>
+      {View}
+</div>
+    </motion.section>
   )
 }

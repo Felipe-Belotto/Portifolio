@@ -1,7 +1,23 @@
 .main{
-  min-width: 1440px;
   display: flex;
   flex-direction: column;
-  gap: 300px;
-  padding: 0 0 300px 0;
+  align-items: center;
+  gap: 150px;
+  width: 100vw;
+}
+
+.Apresentaco__container,.SobreMim__container, .Tecnologias__container, .PrincipaisProjetos__container, .Contato__container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 100px 0;
+}
+
+.SobreMim__container{
+  padding: 150px 0;
+}
+
+.SobreMim__container, .PrincipaisProjetos__container {
+  background-color: #0000001d;
 }

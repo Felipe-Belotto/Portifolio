@@ -1,3 +1,9 @@
+.sobremim{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .container{
   width: calc(1440px - 64px);
   background-color: #191919;

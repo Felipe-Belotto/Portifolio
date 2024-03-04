@@ -1,15 +1,24 @@
-
-.apresentacao div  {
-  padding: 200px 0;
-  max-width: 694px;
+.apresentacao {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-width: 1440px;
+  min-height: 700px;
 }
 
-.apresentacao div span {
+.apresentacao span {
+  padding: 200px 0;
+  max-width: 800px;
   color: #fff;
   font-size: 48px;
   font-weight: bold;
 }
 
-.apresentacao div span strong {
+.apresentacao span strong {
   color: #A400CD;
+}
+
+.animacao{
+  width: 500px;
+  background-image: url("../../../../public/animacao.json" );
 }

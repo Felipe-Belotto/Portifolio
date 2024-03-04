@@ -17,8 +17,8 @@ export default function Tecnologias() {
   }, [inView]);
 
   return (
-    <motion.section animate={isVisible ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.5 }}
-    initial={{ opacity: 0, scale: 0.5 }}
+    <motion.section animate={isVisible ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.5}}
+    initial={{ opacity: 0, scale: 0.5  }}
     transition={{ duration: 0.5 }}  
     ref={ref} className={styles.tecnologias}>
       <TituloSection texto="Tecnologias" />
