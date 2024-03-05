@@ -9,6 +9,9 @@ import InputForm from '@/Components/ComponentesContato/InputForm/InputForm'
 import TextAreaForm from '@/Components/TextAreaForm/TextAreaForm';
 import { Button } from '@mui/material';
 import emailjs from '@emailjs/browser';
+import SendIcon from '@mui/icons-material/Send';
+import ScheduleSendIcon from '@mui/icons-material/ScheduleSend';
+import MarkEmailReadIcon from '@mui/icons-material/MarkEmailRead';
 
 export default function Contato() {
 
@@ -17,6 +20,8 @@ export default function Contato() {
   const[mensagem, setMensagem] = useState('')
   const { ref, inView } = useInView({ threshold: 0 });
   const [isVisible, setIsVisible] = useState(false);
+  const [iconeBotao, setIconeBotao] = useState(<SendIcon/>)
+  const [mensagemBotao, setMensagemBotao] = useState("Enviar")
 
   useEffect(() => {
     if (inView) {
@@ -29,12 +34,20 @@ export default function Contato() {
   const enviarEmail = (e) => {
     e.preventDefault();
 
+    setMensagemBotao("Enviando")
+    setIconeBotao(<ScheduleSendIcon/>)
+    setNome("")
+    setEmail("")
+    setMensagem("")
+
+
     emailjs.sendForm('service_7xjp99k', 'template_vqtigq6', form.current, {
         publicKey: 'K0rGeKsa8IaejL3LM',
       })
       .then(
         () => {
-          alert('Sua mensagem foi enviada!');
+          setMensagemBotao("Enviado")
+          setIconeBotao(<MarkEmailReadIcon />) 
         },
         (error) => {
           alert('Não foi possivel enviar sua mensagem. Tente mais tarde!');
@@ -43,19 +56,20 @@ export default function Contato() {
   };
 
   return (
-    <motion.section ref={ref} 
-     className={styles.contato}>
-      <TituloSection texto="Vamos juntos desenvolver a solução ideal para você ?" />
+
 
       <div className={styles.container}>
+        
        <form ref={form} onSubmit={enviarEmail}>
+       <TituloSection texto="Vamos conversar ?" />
         <InputForm label="Nome" name="from_name" type="text" value={nome} onChange={(event)=>{setNome(event.target.value)}} />
         <InputForm label="Email" name="reply_to" type="email" value={email} onChange={(event)=>{setEmail(event.target.value)}} />
         <TextAreaForm label="Mensagem" name="message" value={mensagem} onChange={(event)=>{setMensagem(event.target.value)}} />
-        <Button variant="contained" className={styles.botao__enviar} value='Send' color='secondary' type='submit'>Enviar</Button>
+        <Button variant="contained" className={styles.botao__enviar} value='Send' color='secondary' type='submit' endIcon={iconeBotao}>{mensagemBotao}</Button>
        </form>
+
+       
       </div>
       
-    </motion.section>
   )
 }

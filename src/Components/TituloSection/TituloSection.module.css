@@ -5,7 +5,7 @@
   background: var(---titulo-section);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  line-height: 150%;
+  line-height: 125%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -24,7 +24,7 @@
 
 @media screen and (max-width: 800px) {
   .titulo{
-    max-width: 90%;
+    max-width: 100%;
     line-height: 125%;
   }
 }
