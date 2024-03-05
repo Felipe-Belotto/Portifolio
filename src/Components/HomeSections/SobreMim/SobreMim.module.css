@@ -82,6 +82,7 @@
 
   .container{
     width: 80%;
+    gap: 0;
   }
 
   .container .conteudo{
@@ -89,6 +90,17 @@
     gap: 0;
     height: auto;
   }
+
+  .contatos{
+    margin: 32px 0;
+  }
+
+  .container .textos p{
+  font-size: 24px;
+  padding: 8px 0;
+  font-weight: 400;
+  line-height: 150%;
+}
 
  .container .arte {
     width: 100%;

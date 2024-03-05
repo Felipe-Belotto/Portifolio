@@ -9,7 +9,7 @@
   display: flex;
   background-color: var(---fundo-card);
   border-radius: 8px;
-  padding: 130px 64px;
+  padding: 100px 50px;
   gap: 64px;
   box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.25)
 }
@@ -32,7 +32,7 @@
 
   .card{
     width: 90%;
-    padding: 100px 32px;
+    padding: 64px 32px;
   }
 }
 

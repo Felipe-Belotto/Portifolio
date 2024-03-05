@@ -1,7 +1,7 @@
 
 .titulo {
-  max-width: 1000px;
-  font-size: 48px;
+  max-width: 500px;
+  font-size: 36px;
   background: var(---titulo-section);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -20,4 +20,11 @@
     font-size: 36px;
   }
   
+}
+
+@media screen and (max-width: 800px) {
+  .titulo{
+    max-width: 90%;
+    line-height: 125%;
+  }
 }

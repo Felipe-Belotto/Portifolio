@@ -4,7 +4,7 @@ import Apresentacao from "@/Components/HomeSections/Apresentacao/Apresentacao";
 import SobreMim from "@/Components/HomeSections/SobreMim/SobreMim";
 import Tecnologias from "@/Components/HomeSections/Tecnologias/Tecnologias";
 import PrincipaisProjetos from "@/Components/HomeSections/PrincipaisProjetos/PrincipaisProjetos";
-import Contato from "@/Components/HomeSections/Contato/Contato";
+import Contato from "@/Components/Contato/Contato";
 
 export default function Home() {
   return (

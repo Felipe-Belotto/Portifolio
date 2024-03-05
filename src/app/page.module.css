@@ -10,11 +10,11 @@
   align-items: center;
   justify-content: center;
   width: 100%;
-  padding: 150px 0;
+  padding: 100px 0;
 }
 
 .SobreMim__container, .PrincipaisProjetos__container {
-  background-color: #0e0e0e7f;
+  background: linear-gradient(29deg, rgba(15, 15, 15, 0.511) 0%, rgba(15, 15, 15, 0.611) 100%);
 }
 
 .Tecnologias__container {

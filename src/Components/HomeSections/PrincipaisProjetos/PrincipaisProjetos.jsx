@@ -13,30 +13,34 @@ export const ListaProjetosPrincipais = [
   {
     "nome": "SW Edits",
     "imagem": "/PrincipaisProjetos/SWEdits.png",
-    "descricao": "Site que simula um streaming de vídeos de cortes do universo de Star Wars.",
+    "descricao": "Mergulhe na saga Star Wars como nunca antes! O SW Edits é uma plataforma inovadora que simula um serviço de streaming, mas com foco em cortes e edits incríveis do universo criado por George Lucas. Reviva momentos épicos, explore cenas de diferentes perspectivas e descubra a criatividade da comunidade Star Wars.",
     "github": "https://github.com/Felipe-Belotto/SW-Edits",
-    "deploy": "https://sw-edits.vercel.app/"
+    "deploy": "https://sw-edits.vercel.app/",
+    "tecnologias": ["React", "Router Dom", "Material Ui"],
   },
   {
     "nome": "To Do List",
     "imagem": "/PrincipaisProjetos/ToDoList.png",
-    "descricao": "Lista de tarefas com opção de criar vários blocos e movê-los.",
+    "descricao": "Organize sua vida com estilo! A To Do List é uma aplicação completa que te ajuda a gerenciar suas tarefas de forma eficiente e intuitiva. Crie listas personalizadas, defina prazos e prioridades, organize seus blocos de tarefas e acompanhe seu progresso com facilidade.",
     "github": "https://github.com/Felipe-Belotto/To-Do-List",
-    "deploy": "https://fbelotto-to-do-list.vercel.app/"
+    "deploy": "https://fbelotto-to-do-list.vercel.app/",
+    "tecnologias": ["React","Material Ui"],
   },
   {
     "nome": "Calculadora de documentação",
     "imagem": "/PrincipaisProjetos/Documentacao.png",
-    "descricao": "Projeto em JavaScript vanilla para calcular documentação de financiamento (meu primeiro projeto).",
+    "descricao": "Simplifique o processo de financiamento! A Calculadora de Documentação é uma ferramenta gratuita que te ajuda a calcular os valores de financiamento de forma rápida e precisa. Insira as informações do seu contrato e obtenha resultados instantâneos, facilitando a tomada de decisões.",
     "github": "https://github.com/Felipe-Belotto/DocumentacaoParaFinanciamento",
-    "deploy": "https://documentacao-para-financiamento.vercel.app/"
+    "deploy": "https://documentacao-para-financiamento.vercel.app/",
+    "tecnologias": ["Javascript"],
   },
   {
     "nome": "Cachorrinhos.com",
     "imagem": "/PrincipaisProjetos/Cachorrinhos.png",
-    "descricao": "Site que exibe as raças mais conhecidas a partir do continente escolhido. Também é possível visualizar o perfil da raça.",
+    "descricao": "Descubra o mundo dos cachorros! O Cachorrinhos.com é um site completo que te ajuda a conhecer as raças mais populares do mundo. Explore por continente, visualize fotos e informações detalhadas, e encontre o companheiro ideal para você.",
     "github": "https://github.com/Felipe-Belotto/CachorrosPontoCom",
-    "deploy": "https://cachorrinhos.vercel.app/"
+    "deploy": "https://cachorrinhos.vercel.app/",
+    "tecnologias": ["Javascript"],
   }
 ]
 
@@ -67,6 +71,7 @@ export default function PrincipaisProjetos() {
         alt={projeto.nome}
         github={projeto.github}
         deploy={projeto.deploy}
+        tecnologias={projeto.tecnologias}
       />
     ))}
     </div>

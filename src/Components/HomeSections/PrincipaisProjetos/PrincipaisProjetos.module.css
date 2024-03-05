@@ -8,9 +8,9 @@
 .projetos {
   width: 1440px;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-content: space-around; 
+  flex-direction: column;
+  gap: 64px;
+  align-items: center;
 }
 
 .buttonTodosProjetos{
