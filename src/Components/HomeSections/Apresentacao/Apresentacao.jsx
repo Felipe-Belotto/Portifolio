@@ -14,9 +14,9 @@ export default function Apresentacao() {
   const { View } = useLottie(options);
   return (
       <motion.section  
-      initial={{ opacity: 0, scale: 0.5 }}
-      animate={{ opacity: 1, scale: 1 }}
-      transition={{ duration: 0.5 }} className={styles.apresentacao}>
+     /*  initial={{ opacity: 0, scale: 0 }}
+      animate={{ opacity: 1, scale: 1 }} */
+     /*  transition={{ duration: 0.5 }} */ className={styles.apresentacao}>
   
       <span>Acredite no poder da <strong>tecnologia</strong> para transformar o mundo, e eu te ajudo a fazer isso acontecer.</span>
 

@@ -43,7 +43,8 @@ export default function Contato() {
   };
 
   return (
-    <motion.section ref={ref} animate={isVisible ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.5 }} initial={{ opacity: 0, scale: 0.5 }} transition={{ duration: 0.5 }} className={styles.contato}>
+    <motion.section ref={ref} 
+     className={styles.contato}>
       <TituloSection texto="Vamos juntos desenvolver a solução ideal para você ?" />
 
       <div className={styles.container}>

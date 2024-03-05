@@ -53,7 +53,8 @@ export default function PrincipaisProjetos() {
   }, [inView]);
 
   return (
-    <motion.div ref={ref} animate={isVisible ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.5 }} initial={{ opacity: 0, scale: 0.5 }} transition={{ duration: 0.5 }} className={styles.container}>
+    <motion.div ref={ref} 
+     className={styles.container}>
     <TituloSection texto="Projetos" />
     
     <div className={styles.projetos}>

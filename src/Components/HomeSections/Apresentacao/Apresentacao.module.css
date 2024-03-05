@@ -3,7 +3,7 @@
   justify-content: space-between;
   align-items: center;
   min-width: 1440px;
-  min-height: 850px;
+  min-height: 75vh;
 }
 
 .apresentacao span {
@@ -28,6 +28,10 @@
     min-width: 90%;
     min-height: auto;
     flex-wrap: wrap;
+  }
+
+  .apresentacao span{
+    padding: 100px 0;
   }
 }
 
