@@ -81,14 +81,18 @@
 @media screen and (max-width: 800px) {
 
   .container{
-    width: 80%;
+    width: 100%;
+    background-color: transparent;
     gap: 0;
+    box-shadow: none;
   }
 
   .container .conteudo{
     width: 100%;
     gap: 0;
     height: auto;
+    align-items: center;
+    
   }
 
   .contatos{
