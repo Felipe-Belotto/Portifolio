@@ -27,7 +27,7 @@
 }
 
 .card .conteudo .descricao {
-  max-height: 125px;
+  max-height: auto;
   font-size: 16px;
   font-weight: 300;
   line-height: 125%;
@@ -103,9 +103,7 @@
     gap: 16px;
   }
 
-  .tecnologias{
-    margin: 16px 0 0 0;
-  }
+
   
   .buttons__container{
     justify-content: center;
