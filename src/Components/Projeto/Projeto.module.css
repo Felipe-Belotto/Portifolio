@@ -70,3 +70,10 @@
 .buttons__container .card__button:nth-child(2):hover {
   background-color: rgba(61, 61, 61, 0.556);
 }
+
+@media screen and (max-width: 800px) {
+  .card{
+    width: 95%;
+  }
+  
+}

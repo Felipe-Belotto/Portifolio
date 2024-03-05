@@ -5,3 +5,20 @@
   gap: 64px;
 }
 
+@media screen and (max-width: 1440px) {
+  .tecnologias{
+    min-width: 90%;
+    min-height: auto;
+  }
+  
+}
+
+@media screen and (max-width: 800px) {
+  .tecnologias{
+    min-width: 100%;
+    min-height: auto;
+    display: flex;
+    justify-content: center;
+  }
+  
+}

@@ -1,8 +1,4 @@
-.sobremim{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
+
 
 .container{
   width: calc(1440px - 64px);
@@ -62,4 +58,40 @@
   width: 550px;
   border-radius: 8px;
   box-shadow: 0 8px 8px rgba(0, 0, 0, 0.25)
+}
+
+@media screen  and (max-width: 1440px) {
+
+
+  .container{
+    width: 90%;
+    padding: 32px;
+  }
+
+  .container .conteudo{
+    width: 50%;
+    gap: 0;
+  }
+
+  .container .arte {
+    width: 45%;
+  }
+  
+}
+
+@media screen and (max-width: 800px) {
+
+  .container{
+    width: 80%;
+  }
+
+  .container .conteudo{
+    width: 100%;
+    gap: 0;
+    height: auto;
+  }
+
+ .container .arte {
+    width: 100%;
+  }
 }

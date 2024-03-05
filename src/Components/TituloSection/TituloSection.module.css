@@ -13,3 +13,11 @@
   text-align: center;
   font-weight: 500;
 }
+
+@media screen and (max-width: 1200px) {
+  .titulo{
+    max-width: 500px;
+    font-size: 36px;
+  }
+  
+}

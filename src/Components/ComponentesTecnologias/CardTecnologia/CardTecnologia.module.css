@@ -1,4 +1,5 @@
 .container{
+  width: 1440px;
   display: flex;
   flex-direction: column;
   gap: 64px;
@@ -22,4 +23,53 @@
 .card ul{
   display: flex;
   gap:32px
+}
+
+@media screen and (max-width: 1440px) {
+  .container {
+    width: 90%;
+  }
+
+  .card{
+    width: 90%;
+    padding: 100px 32px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+
+  .card{
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+    padding: 64px 32px;
+
+  }
+
+  .card .subtitulo{
+    padding: 32px 32px 0 32px;
+  }
+
+  .card ul {
+    display:flex;
+    flex-wrap: wrap;
+  }
+  
+}
+
+@media screen and (max-width: 800px) {
+
+  .container {
+    width: 90%;
+  }
+
+  .card{
+    width: 100%;
+    padding: 0;
+  }
+
+  .card ul{
+    padding: 32px;
+  }
+  
 }

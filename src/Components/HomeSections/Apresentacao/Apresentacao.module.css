@@ -22,3 +22,31 @@
   width: 500px;
   background-image: url("../../../../public/animacao.json" );
 }
+
+@media screen and (max-width: 1440px) {
+  .apresentacao{
+    min-width: 90%;
+    min-height: auto;
+    flex-wrap: wrap;
+  }
+}
+
+  @media  screen and (max-width: 1200px) {
+    .apresentacao{
+      justify-content: center;
+    }
+
+    .animacao{
+      display: none;
+    }
+  }
+
+  @media screen and (max-width: 800px) {
+    .apresentacao span{
+      max-width: 90%;
+      padding: 150px 0;
+      font-size: 36px;
+    }
+    
+  }
+

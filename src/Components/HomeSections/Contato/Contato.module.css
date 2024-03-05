@@ -25,3 +25,14 @@
 .botao__enviar{
   background-color: #4d4d50;
 }
+
+@media screen and (max-width: 1440px) {
+.container{
+  width: 90%;
+}
+
+.container form {
+  width: 80%;
+}
+  
+}

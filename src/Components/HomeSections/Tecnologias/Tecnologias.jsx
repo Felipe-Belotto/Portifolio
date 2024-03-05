@@ -20,7 +20,7 @@ export default function Tecnologias() {
     <motion.section animate={isVisible ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.5}}
     initial={{ opacity: 0, scale: 0.5  }}
     transition={{ duration: 0.5 }}  
-    ref={ref} className={styles.tecnologias}>
+    ref={ref} className={styles.tecnologias} style={{display: "flex", justifyContent: "center", alignItems: "center"}}>
       <TituloSection texto="Tecnologias" />
   
       <CardTecnologia/>
