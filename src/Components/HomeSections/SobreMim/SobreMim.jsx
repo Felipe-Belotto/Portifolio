@@ -30,10 +30,10 @@ export default function SobreMim() {
           </div>
 
           <div className={styles.contatos}>
-            <IconeContato redeSocial="instagram" link="https://api.whatsapp.com/send?phone=551993930323" />
+            <IconeContato redeSocial="instagram" link="https://www.instagram.com/belottofelipe/" />
             <IconeContato redeSocial="whatsapp" link="https://api.whatsapp.com/send?phone=551993930323" />
-            <IconeContato redeSocial="github" link="https://api.whatsapp.com/send?phone=551993930323" />
-            <IconeContato redeSocial="linkedin" link="https://api.whatsapp.com/send?phone=551993930323" />
+            <IconeContato redeSocial="github" link="https://github.com/Felipe-Belotto" />
+            <IconeContato redeSocial="linkedin" link="https://www.linkedin.com/in/felipe-belotto-a34738185/" />
           </div>
 
         </div>

@@ -53,6 +53,7 @@
   .card ul {
     display:flex;
     flex-wrap: wrap;
+ 
   }
   
 }
@@ -70,6 +71,7 @@
 
   .card ul{
     padding: 32px;
+    justify-content: space-between  ;
   }
   
 }
