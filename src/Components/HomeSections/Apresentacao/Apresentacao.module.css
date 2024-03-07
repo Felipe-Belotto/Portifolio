@@ -3,7 +3,7 @@
   justify-content: space-between;
   align-items: center;
   min-width: 1440px;
-  min-height: 75vh;
+  min-height: 85vh;
 }
 
 .apresentacao span {
@@ -26,7 +26,7 @@
 @media screen and (max-width: 1440px) {
   .apresentacao{
     min-width: 90%;
-    min-height: auto;
+    min-height: 85vh;
     flex-wrap: wrap;
   }
 

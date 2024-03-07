@@ -14,9 +14,9 @@
 }
 
 .SobreMim__container, .PrincipaisProjetos__container {
-  background: linear-gradient(29deg, rgba(15, 15, 15, 0.511) 0%, rgba(15, 15, 15, 0.611) 100%);
+  background: var(---cor-fundo-dois);
 }
 
 .Tecnologias__container {
-  background-color: #00000063;
+  background-color: var(---cor-fundo-tres);
 }
