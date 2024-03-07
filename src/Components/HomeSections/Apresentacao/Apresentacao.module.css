@@ -46,6 +46,10 @@
   }
 
   @media screen and (max-width: 800px) {
+    .apresentacao{
+      min-height: 65vh;
+    }
+
     .apresentacao span{
       max-width: 90%;
       padding: 150px 0;
