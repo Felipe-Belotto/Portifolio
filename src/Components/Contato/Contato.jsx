@@ -7,7 +7,7 @@ import styles from './Contato.module.css'
 import TituloSection from '@/Components/TituloSection/TituloSection'
 import InputForm from '@/Components/ComponentesContato/InputForm/InputForm'
 import TextAreaForm from '@/Components/TextAreaForm/TextAreaForm';
-import { Button } from '@mui/material';
+import { Button, CircularProgress } from '@mui/material';
 import emailjs from '@emailjs/browser';
 import SendIcon from '@mui/icons-material/Send';
 import ScheduleSendIcon from '@mui/icons-material/ScheduleSend';
@@ -35,7 +35,7 @@ export default function Contato() {
     e.preventDefault();
 
     setMensagemBotao("Enviando")
-    setIconeBotao(<ScheduleSendIcon/>)
+    setIconeBotao(<CircularProgress size={20} color='inherit'/>)
     setNome("")
     setEmail("")
     setMensagem("")
@@ -48,6 +48,10 @@ export default function Contato() {
         () => {
           setMensagemBotao("Enviado")
           setIconeBotao(<MarkEmailReadIcon />) 
+          setInterval(() => {
+            setMensagemBotao("Enviar")
+            setIconeBotao(<SendIcon/>)
+          }, 5000);
         },
         (error) => {
           alert('Não foi possivel enviar sua mensagem. Tente mais tarde!');
@@ -65,7 +69,7 @@ export default function Contato() {
         <InputForm label="Nome" name="from_name" type="text" value={nome} onChange={(event)=>{setNome(event.target.value)}} />
         <InputForm label="Email" name="reply_to" type="email" value={email} onChange={(event)=>{setEmail(event.target.value)}} />
         <TextAreaForm label="Mensagem" name="message" value={mensagem} onChange={(event)=>{setMensagem(event.target.value)}} />
-        <Button variant="contained" className={styles.botao__enviar} value='Send' color='secondary' type='submit' endIcon={iconeBotao}>{mensagemBotao}</Button>
+        <Button variant="contained" className={styles.botao__enviar} value='Send' color={mensagemBotao==="Enviado"?"success":"secondary"} type='submit' endIcon={iconeBotao}>{mensagemBotao}</Button>
        </form>
 
        
