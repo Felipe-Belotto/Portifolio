@@ -69,7 +69,7 @@ export default function Contato() {
         <InputForm label="Nome" name="from_name" type="text" value={nome} onChange={(event)=>{setNome(event.target.value)}} />
         <InputForm label="Email" name="reply_to" type="email" value={email} onChange={(event)=>{setEmail(event.target.value)}} />
         <TextAreaForm label="Mensagem" name="message" value={mensagem} onChange={(event)=>{setMensagem(event.target.value)}} />
-        <Button variant="contained" className={styles.botao__enviar} value='Send' color={mensagemBotao==="Enviado"?"success":"secondary"} type='submit' endIcon={iconeBotao}>{mensagemBotao}</Button>
+        <Button variant="contained" className={styles.botao__enviar} style={{background: mensagemBotao === "Enviado" ? "green" : "#6d0068"}} value='Send' color={mensagemBotao==="Enviado"?"success":"secondary"} type='submit' endIcon={iconeBotao}>{mensagemBotao}</Button>
        </form>
 
        
