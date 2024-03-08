@@ -5,7 +5,7 @@ import IconeTecnologia from '../IconeTecnologia/IconeTecnologia'
 
 export default function CardTecnologia() {
 
-  const ListaFrontEnd = ["javascript","typescript", "react","next","sass","materialui","routerdom","git"]
+  const ListaFrontEnd = ["javascript","typescript", "react","next","sass","tailwind","materialui","routerdom","git"]
   const ListaDesign =["AfterEffects", "Canva", "Figma", "Illustrator"]
 
   return (
