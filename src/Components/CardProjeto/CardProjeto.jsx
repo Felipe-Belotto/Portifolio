@@ -1,10 +1,10 @@
 
 'use client'
 import React, { useState } from 'react'
-import styles from './Projeto.module.css'
+import styles from './CardProjeto.module.css'
 import Link from 'next/link'
 
-export default function Projeto(props) {
+export default function CardProjeto(props) {
   const [corCategoria, setCorCategoria] = useState(props.categoria === "Desafio" ? "#0c1a2f" : "Purple")
   const todasTecnologias = props.tecnologias
 

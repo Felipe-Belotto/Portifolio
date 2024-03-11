@@ -1,5 +1,5 @@
 
-import Projeto from "@/components/Projeto/Projeto.jsx";
+import CardProjeto from "@/components/CardProjeto/CardProjeto";
 import styles from "./page.module.css";
 
 import { Metadata } from 'next'
@@ -141,7 +141,7 @@ export default function Projetos() {
       <ul className={styles.projetos}>
         {listaTodosProjetos.map((projeto, index) => (
           <li key={index}>
-            <Projeto
+            <CardProjeto
               nome={projeto.nome}
               imagem={projeto.imagem}
               categoria={projeto.categoria}

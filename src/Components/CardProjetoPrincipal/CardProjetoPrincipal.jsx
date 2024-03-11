@@ -1,8 +1,8 @@
 import React from 'react';
-import styles from './ProjetoPrincipal.module.css';
+import styles from './CardProjetoPrincipal.module.css';
 import Link from 'next/link';
 
-export default function ProjetoPrincipal(props) {
+export default function CardProjetoPrincipal(props) {
   const todasTecnologias = props.tecnologias
   /* alert(typeof(todasTecnologias)) */
 
