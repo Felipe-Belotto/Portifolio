@@ -6,7 +6,7 @@ import { useInView } from 'react-intersection-observer';
 import styles from './PrincipaisProjetos.module.css'
 import TituloSection from '@/Components/TituloSection/TituloSection'
 import Link from 'next/link'
-import ProjetoPrincipal from '@/components/ProjetoPrincipal/ProjetoPrincipal';
+import ProjetoPrincipal from '@/components/ProjetoPrincipal/ProjetoPrincipal.jsx';
 
 export const ListaProjetosPrincipais = [
   {

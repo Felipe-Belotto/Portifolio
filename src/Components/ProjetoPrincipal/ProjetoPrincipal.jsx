@@ -6,7 +6,6 @@ export default function ProjetoPrincipal(props) {
   const todasTecnologias = props.tecnologias
   /* alert(typeof(todasTecnologias)) */
 
-
   return (
     <div className={styles.card}>
       <img src={props.imagem} alt={props.alt} />
@@ -29,6 +28,5 @@ export default function ProjetoPrincipal(props) {
         </div>
       </div>
     </div>
-    
   );
 }
