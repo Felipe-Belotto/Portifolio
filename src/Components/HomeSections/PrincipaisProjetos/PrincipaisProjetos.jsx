@@ -6,7 +6,7 @@ import { useInView } from 'react-intersection-observer';
 
 import styles from './PrincipaisProjetos.module.css'
 import TituloSection from '@/Components/TituloSection/TituloSection'
-import Projeto from '@/Components/Projeto/Projeto'
+import ProjetoPrincipal from '@/components/ProjetoPrincipal/ProjetoPrincipal'
 import Link from 'next/link'
 
 export const ListaProjetosPrincipais = [
@@ -63,7 +63,7 @@ export default function PrincipaisProjetos() {
     
     <div className={styles.projetos}>
     {projetos.map((projeto, index) => (
-     <Projeto
+     <ProjetoPrincipal
         key={index}
         nome={projeto.nome}
         descricao={projeto.descricao}
