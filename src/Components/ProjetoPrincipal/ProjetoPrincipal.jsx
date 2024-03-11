@@ -1,5 +1,4 @@
 import React from 'react';
-
 import styles from './ProjetoPrincipal.module.css';
 import Link from 'next/link';
 

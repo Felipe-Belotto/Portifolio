@@ -3,11 +3,10 @@ import React, { useEffect, useRef, useState } from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 
-
 import styles from './PrincipaisProjetos.module.css'
 import TituloSection from '@/Components/TituloSection/TituloSection'
-import ProjetoPrincipal from '@/components/ProjetoPrincipal/ProjetoPrincipal'
 import Link from 'next/link'
+import ProjetoPrincipal from '@/components/ProjetoPrincipal/ProjetoPrincipal';
 
 export const ListaProjetosPrincipais = [
   {
