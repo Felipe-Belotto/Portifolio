@@ -1,4 +1,5 @@
-import Projeto from "@/components/Projeto/Projeto";
+
+import Projeto from "@/components/Projeto/Projeto.jsx";
 import styles from "./page.module.css";
 
 import { Metadata } from 'next'
