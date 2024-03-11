@@ -6,7 +6,7 @@ import { useInView } from 'react-intersection-observer';
 import styles from './PrincipaisProjetos.module.css'
 import TituloSection from '@/Components/TituloSection/TituloSection'
 import Link from 'next/link'
-import ProjetoPrincipal from '@/components/CardProjetoPrincipal/CardProjetoPrincipal.jsx';
+import CardProjetoPrincipal from './CardProjetoPrincipal/CardProjetoPrincipal';
 
 export const ListaProjetosPrincipais = [
   {
@@ -62,7 +62,7 @@ export default function PrincipaisProjetos() {
     
     <div className={styles.projetos}>
     {projetos.map((projeto, index) => (
-     <ProjetoPrincipal
+     <CardProjetoPrincipal
         key={index}
         nome={projeto.nome}
         descricao={projeto.descricao}
