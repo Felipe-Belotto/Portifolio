@@ -6,7 +6,7 @@ import Contato from "@/Components/Contato/Contato";
 import IconeContato from "@/Components/IconeContato/IconeContato";
  
 export const metadata = {
-  title: 'Contato | Portifólio',
+  title: 'Contatos | Portifólio',
   description: 'Página de contatos do portifólio',
 }
 

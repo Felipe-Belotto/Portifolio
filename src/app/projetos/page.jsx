@@ -6,8 +6,8 @@ import { Metadata } from 'next'
 import ListaProjetos from "@/Components/ProjetosSections/ListaProjetos/ListaProjetos";
  
 export const metadata = {
-  title: 'PaginaNova - Portifólio',
-  description: '...',
+  title: 'Projetos | Portifólio',
+  description: 'Página de projetos do portifólio',
 }
 
 

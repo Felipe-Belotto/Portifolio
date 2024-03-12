@@ -1,0 +1,20 @@
+ .main {
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items: center ;
+ }
+
+ .titulo {
+  font-size: 24px;
+  font-weight: bold;
+ }
+
+ .home{
+  font-size: 24px;
+  text-decoration: none;
+  color: #f1f1f1;
+  background-color: #484085;
+  padding: 16px;
+  border-radius: 8px;
+ }
