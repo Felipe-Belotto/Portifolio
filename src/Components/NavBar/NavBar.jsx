@@ -13,6 +13,9 @@ export default function NavBar() {
     <Link href={"/projetos"} className={styles.nav__item}>Projetos</Link>
     <Link href={"/contatos"} className={styles.nav__item}>Contatos</Link>
     </div>
+    <div className={styles.links__container__mobile}>
+    <Link href={"/projetos"} className={styles.nav__item}>Projetos</Link>
+    </div>
   </nav>
   )
 }
