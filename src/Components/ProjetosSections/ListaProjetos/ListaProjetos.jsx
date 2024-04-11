@@ -8,6 +8,15 @@ export const ListaDosProjetos = [
     "tecnologias": ["React", "Router Dom", "Material Ui"],
   },
   {
+    "nome": "MKS Sitemas",
+    "imagem": "/TodosProjetos/mksdesafio.png",
+    "categoria": "Desafio",
+    "github": "https://github.com/Felipe-Belotto/mks-frontend-challenge",
+    "deploy": "https://mks-frontend-challenge-iota.vercel.app/",
+    "tecnologias": ["Next Js", "Typescript", "Tailwind"],
+  }
+  ,
+  {
     "nome": "To Do List",
     "imagem": "/PrincipaisProjetos/ToDoList.png",
     "categoria": "Pessoal",
