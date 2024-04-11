@@ -37,7 +37,7 @@ export default function SobreMim() {
 
         </div>
 
-        <img src="arte.gif" alt="arte" className={styles.arte}/>
+        <img src="perfil.png" alt="foto de perfil" className={styles.perfil}/>
 
       </div>
     </motion.section>

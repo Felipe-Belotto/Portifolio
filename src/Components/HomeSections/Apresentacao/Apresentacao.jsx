@@ -20,9 +20,9 @@ export default function Apresentacao() {
   
       <span>Acredite no poder da <strong>tecnologia</strong> para transformar o mundo, e eu te ajudo a fazer isso acontecer.</span>
 
-<div className={styles.animacao}>
-      {View}
-</div>
+
+    <img src="arte.gif" alt="arte" className={styles.arte}/>
+
     </motion.section>
   )
 }
