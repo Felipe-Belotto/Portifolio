@@ -74,7 +74,7 @@ export default function PrincipaisProjetos() {
       />
     ))}
     </div>
-    <Link href={"/projetos"} className={styles.buttonTodosProjetos}>Ver mais</Link>
+    <Link href={"/projetos"} className={styles.buttonTodosProjetos}>Todos os projetos</Link>
   </motion.div>
   )
 }

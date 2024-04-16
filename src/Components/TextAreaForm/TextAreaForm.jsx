@@ -3,10 +3,10 @@ import React from 'react'
 
 export default function TextAreaForm(props) {
   const labelStyles = {
-    color: '#f1f1f1'
+    color: '#a9a9a9'
   };
 
-  const inputStyles = { color: '#fff', backgroundColor: '#242424', boxShadow:"0 4px 4px rgba(0, 0, 0, 0.25)" }
+  const inputStyles = { color: '#000', backgroundColor: '#eeeeee', boxShadow:"0 4px 4px rgba(0, 0, 0, 0.25)" }
 
   return (
     <TextField

@@ -18,20 +18,29 @@
   gap: 32px;
   box-shadow:8px 8px 8px 8px rgba(0, 0, 0, 0.25);
   padding:32px;
-  background-color: var(---fundo-section);
+  background-color: var(---fundo-secundario);
 }
 
-.botao__enviar{
-  background-color: #4d4d50;
+.titulo__container{
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 @media screen and (max-width: 1440px) {
 .container{
-  width: 100%;
+  width: 60%;
 }
 
 .container form {
   width: 100%;
 }
+  
+}
+
+@media screen and (max-width: 800px) {
+  .container{
+    width: 100%;
+  }
   
 }

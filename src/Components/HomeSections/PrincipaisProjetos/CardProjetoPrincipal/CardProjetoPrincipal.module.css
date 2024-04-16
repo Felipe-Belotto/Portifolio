@@ -39,12 +39,13 @@
 }
 
 .tecnologias li{
-  color: var(---tecnologia-texto-cor);
+  color: var();
   font-weight: 500;
   font-size: 14px;
   padding: 8px;
   border-radius: 8px;
-  background-color: var(---tecnologia-texto-fundo);
+  background-color: var(---tecnologia-fundo);
+  color: var(---tecnologia-texto);
 }
 
 .buttons__container{
@@ -69,21 +70,23 @@
 }
 
 .buttons__container .card__button:nth-child(1) {
-  background-color: rgb(16, 16, 16);
-  color: var(--cor-texto);
+  background-color: var(---preto);
+  color: var(---branco);
+  border: 1px solid var(---preto);
 }
 
 .buttons__container .card__button:nth-child(1):hover {
-  background-color: rgba(61, 61, 61, 0.556);
+  transform: scale(0.98);
 }
 
 .buttons__container .card__button:nth-child(2){
-  background-color: rgba(38, 38, 38, 0.500);
-  color: var(--cor-titulo);
+  background-color: var(---branco);
+  color: var(---preto);
+  border: 1px solid var(---texto-secundario);
 }
 
 .buttons__container .card__button:nth-child(2):hover {
-  background-color: rgba(61, 61, 61, 0.556);
+  transform: scale(0.98);
 }
 
 

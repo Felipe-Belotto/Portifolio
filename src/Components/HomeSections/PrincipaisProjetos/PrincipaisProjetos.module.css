@@ -18,9 +18,9 @@
   height: 80px;
   font-size: 24px;
   text-decoration: none;
-  color: var(---texto-apagado);
+  color: var(---texto-secundario);
   border-radius: 8px;
-  background-color: var(---fundo-card);
+  background-color: var(---fundo-secundario);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -29,11 +29,17 @@
 }
 
 .buttonTodosProjetos:hover {
-  background-color: #1c1c1c;
-  color: #fff;
+  color: var(---preto);
+  transform: scale(0.98);  
 }
 
 @media screen and (max-width: 1440px) {
+  .projetos{
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 800px) {
   .projetos{
     width: 90%;
   }

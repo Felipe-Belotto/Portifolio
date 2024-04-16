@@ -1,3 +1,5 @@
+"use client"
+
 export const ListaDosProjetos = [
   {
     "nome": "SW Edits",
@@ -135,10 +137,12 @@ export const ListaDosProjetos = [
 import React from "react";
 import CardProjeto from "./CardProjeto/CardProjeto";
 import styles from "./ListaProjetos.module.css";
+import ScrollToTop from "react-scroll-to-top";
 
 export default function ListaProjetos() {
   const listaTodosProjetos = ListaDosProjetos
   return (
+    <>    <ScrollToTop smooth height="20px" color="white" style={{background:"linear-gradient(117deg, #7e24ff80 20%, #ff80fd 60%, rgba(126, 36, 255, 0.5) 80%, #ff80fd 100%)", boxShadow:"none"}}/>
       <ul className={styles.projetos}>
         {listaTodosProjetos.map((projeto, index) => (
           <li key={index}>
@@ -153,5 +157,7 @@ export default function ListaProjetos() {
           </li>
         ))}
       </ul>
+      </>
+
   );
 }

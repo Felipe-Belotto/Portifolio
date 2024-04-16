@@ -7,7 +7,7 @@
 
 .card {
   display: flex;
-  background-color: var(---fundo-card);
+  background-color: var(---fundo-secundario);
   border-radius: 8px;
   padding: 100px 50px;
   gap: 64px;
@@ -17,7 +17,7 @@
 .card .subtitulo {
   width: 200px;
   font-size: 36px;
-  color: var(---texto-apagado);
+  color: var(---texto-secundario);
 }
 
 .card ul{
@@ -27,11 +27,12 @@
 
 @media screen and (max-width: 1440px) {
   .container {
-    width: 90%;
+    width: 100%;
+    align-items: center;
   }
 
   .card{
-    width: 90%;
+    width: calc(90% - 64px);
     padding: 64px 32px;
   }
 }

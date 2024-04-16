@@ -10,7 +10,7 @@
 
 .logo {
   text-decoration: none;
-  color: #fff;
+  color: var(---texto-primario);
   font-size: 20px ;
   font-weight: bold;
   cursor: pointer;
@@ -26,18 +26,18 @@
 
 .nav__item{
   text-decoration: none;
-  color: #fff;
+  color: var(---texto-primario);
   font-size: 20px;
   cursor: pointer;
-  font-weight: 400;
+  font-weight: 500;
 }
 
 .nav__item:hover{
-    color: #e8e5e5;
+    color: var(---texto-primario-hover);
 }
 
 .nav__item:active{
-  transform: scale(0.98);
+  transform: scale(0.99);
 }
 
 @media screen and (max-width: 1440px) {
@@ -62,7 +62,8 @@
   } 
 
   .nav__item{
-    background-color: #212121;
+    color: var(---texto-primario);
+    background-color: var(---fundo-secundario);
     padding:8px;
     border-radius: 8px;
     cursor: pointer;

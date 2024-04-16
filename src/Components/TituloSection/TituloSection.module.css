@@ -2,16 +2,25 @@
 .titulo {
   max-width: 500px;
   font-size: 36px;
-  background: var(---titulo-section);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  font-weight: 500;
   line-height: 125%;
   display: flex;
   justify-content: center;
-  align-items: center;
-  align-self: center;
-  text-align: center;
-  font-weight: 500;
+  
+  background: var(---titulo-primario);
+  background-size: 400% 100% ;
+  animation: degrade  10s linear infinite alternate ;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@keyframes degrade {
+  0% {
+    background-position-x: 0% ;
+  }
+  100% {
+    background-position: 400% ;
+  }
 }
 
 @media screen and (max-width: 1200px) {

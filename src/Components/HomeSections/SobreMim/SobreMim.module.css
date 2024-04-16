@@ -2,7 +2,7 @@
 
 .container{
   width: calc(1440px - 64px);
-  background-color: #191919;
+  background-color: var(---fundo-secundario); 
   border-radius: 8px;
   padding: 32px;
   display: flex;
@@ -32,13 +32,13 @@
 .container .textos h1{
   font-size: 32px;
   font-weight: bold;
-  color: var(--cor-titulo);
+  color: var(--cor-texto);
 }
 
 .container .textos h2{
   font-size: 20px;
   font-weight: 500;
-
+  color: var(--cor-segundario);
 }
 
 .container .textos p{
@@ -63,7 +63,7 @@
 
 
   .container{
-    width: 90%;
+    width: calc(90% - 64px);
     padding: 32px;
   }
 
