@@ -71,6 +71,7 @@ export default function PrincipaisProjetos() {
         github={projeto.github}
         deploy={projeto.deploy}
         tecnologias={projeto.tecnologias}
+        view={isVisible}
       />
     ))}
     </div>

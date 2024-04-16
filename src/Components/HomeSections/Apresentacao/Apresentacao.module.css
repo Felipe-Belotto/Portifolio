@@ -1,13 +1,18 @@
 .apresentacao {
+ display: flex;
+ flex-direction: column;
+  width: 1440px;
+  min-height: 80vh;
+}
+
+.apresentacao .container{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 1440px;
-  min-height: 85vh;
+  flex: 1;
 }
 
 .apresentacao span {
-  padding: 200px 0;
   max-width: 680px;
   color: var(---cor-texto);
   font-size: 48px;
@@ -70,7 +75,7 @@
 
   @media screen and (max-width: 800px) {
     .apresentacao{
-      min-height: 65vh;
+      min-height: 85vh;
     }
 
     .apresentacao span{

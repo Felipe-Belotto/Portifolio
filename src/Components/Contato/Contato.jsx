@@ -10,24 +10,19 @@ import TextAreaForm from '@/Components/TextAreaForm/TextAreaForm';
 import { Button, CircularProgress } from '@mui/material';
 import emailjs from '@emailjs/browser';
 import SendIcon from '@mui/icons-material/Send';
-import ScheduleSendIcon from '@mui/icons-material/ScheduleSend';
 import MarkEmailReadIcon from '@mui/icons-material/MarkEmailRead';
+import { Scale } from '@mui/icons-material';
 
 export default function Contato() {
 
   const[nome, setNome] = useState('')
   const[email, setEmail] = useState('')
   const[mensagem, setMensagem] = useState('')
-  const { ref, inView } = useInView({ threshold: 0 });
-  const [isVisible, setIsVisible] = useState(false);
   const [iconeBotao, setIconeBotao] = useState(<SendIcon/>)
   const [mensagemBotao, setMensagemBotao] = useState("Enviar")
 
-  useEffect(() => {
-    if (inView) {
-      setIsVisible(true);
-    }
-  }, [inView]);
+  const { ref, inView } = useInView({ threshold: 0 });
+  const [isVisible, setIsVisible] = useState(false);
 
   const form = useRef()
 
@@ -59,10 +54,26 @@ export default function Contato() {
       );
   };
 
+  useEffect(() => {
+    if (inView) {
+      setIsVisible(true);
+    }
+  }, [inView]);  
+
+  const containerVariants = {
+    visible: { opacity: 1, y: 0, scale: 1, transition: { duration: 1.5 } },
+    hidden: { opacity: 0.5, y: 50, scale: 0.8 },
+  };
+
   return (
 
 
-      <div className={styles.container}>
+      <motion.div 
+      ref={ref}
+      variants={containerVariants}
+      initial="hidden"
+      animate={isVisible ? "visible" : "hidden"}
+      className={styles.container}>
         
        <form ref={form} onSubmit={enviarEmail}>
         <div className={styles.titulo__container}>
@@ -75,7 +86,7 @@ export default function Contato() {
        </form>
 
        
-      </div>
+      </motion.div>
       
   )
 }

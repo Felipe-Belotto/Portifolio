@@ -4,6 +4,7 @@ import { motion } from "framer-motion"
 import { useLottie } from "lottie-react";
 import animacao from "../../../../public/animacao.json";
 import styles from './Apresentacao.module.css'
+import ContinueNavegando from '@/Components/ContinueNavegando/ContinueNavegando';
 
 export default function Apresentacao() {
   const options = {
@@ -13,17 +14,23 @@ export default function Apresentacao() {
 
   const { View } = useLottie(options);
   return (
-      <motion.section  
-     /*  initial={{ opacity: 0, scale: 0 }}
-      animate={{ opacity: 1, scale: 1 }} */
-     /*  transition={{ duration: 0.5 }} */ className={styles.apresentacao}>
-  
-      <span>Acredite no poder da <strong>tecnologia</strong> para transformar o mundo, e eu te ajudo a fazer isso acontecer.</span>
+    <>
+      <section  
+       className={styles.apresentacao}>
+      
+      <div className={styles.container}>
+      <motion.span initial={{ opacity: 0, scale: 0.8 }}
+      animate={{ opacity: 1, scale: 1 }} 
+       transition={{ duration: 1 }}>Acredite no poder da <strong>tecnologia</strong> para transformar o mundo, e eu te ajudo a fazer isso acontecer.</motion.span>
 
-    <div className={styles.arte}>
-    {View}
-    </div>
+      <div className={styles.arte}>
+      {View}
+      </div>
+      </div>
+    
 
-    </motion.section>
+    <ContinueNavegando/>
+    </section>
+    </>
   )
 }

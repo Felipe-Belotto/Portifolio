@@ -1,13 +1,32 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import styles from './CardProjetoPrincipal.module.css';
 import Link from 'next/link';
+import { motion } from 'framer-motion';
 
 export default function CardProjetoPrincipal(props) {
   const todasTecnologias = props.tecnologias
   /* alert(typeof(todasTecnologias)) */
 
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    if (props.view) {
+      setIsVisible(true);
+    }
+  }, [props.view]);
+
+  const containerVariants = {
+    visible: { opacity: 1, y: 0, transition: { duration: 1.5 } },
+    hidden: { opacity: 0, y: 50 },
+  };
+
   return (
-    <div className={styles.card}>
+
+    <motion.div
+    variants={containerVariants}
+    initial="hidden"
+    animate={isVisible ? "visible" : "hidden"}
+    className={styles.card}>
       <img src={props.imagem} alt={props.alt} />
       <div className={styles.conteudo}>
         <p className={styles.nome}>{props.nome}</p>
@@ -27,6 +46,6 @@ export default function CardProjetoPrincipal(props) {
 
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }

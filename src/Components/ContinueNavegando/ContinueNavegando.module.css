@@ -1,0 +1,12 @@
+.container{
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  font-size: 16px;
+  color: var(---texto-secundario);
+  user-select: none;
+}
+
+.container img{
+  width: 16px;
+}

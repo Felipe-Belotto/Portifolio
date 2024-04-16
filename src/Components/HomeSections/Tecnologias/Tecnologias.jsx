@@ -16,8 +16,16 @@ export default function Tecnologias() {
     }
   }, [inView]);
 
+  const containerVariants = {
+    visible: { opacity: 1, scale: 1, transition: { duration: 1 } },
+    hidden: { opacity: 0, scale: 0.8 }
+  };
+
   return (
     <motion.section  
+    variants={containerVariants}
+             initial="hidden"
+             animate={isVisible ? "visible" : "hidden"}
     ref={ref} className={styles.tecnologias} style={{display: "flex", justifyContent: "center", alignItems: "center"}}>
       <TituloSection texto="Tecnologias" />
   
