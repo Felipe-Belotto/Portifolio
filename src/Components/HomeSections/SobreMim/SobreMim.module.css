@@ -26,26 +26,41 @@
   max-width: 100%;
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 32px;
 }
 
 .container .textos h1{
-  font-size: 32px;
+  font-size: 24px;
   font-weight: bold;
   color: var(--cor-texto);
 }
 
 .container .textos h2{
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 500;
   color: var(--cor-segundario);
 }
 
 .container .textos p{
-  font-size: 24px;
-  padding: 16px 0;
+  font-size: 16px;
   font-weight: 400;
   line-height: 150%;
+}
+
+.container .textos p strong{
+  font-weight: bold;
+}
+
+.titulo__container{
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.descricao__container{
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
 }
 
 .contatos{
@@ -56,7 +71,7 @@
 .container .perfil {
   width: 550px;
   border-radius: 8px;
-  box-shadow: 0 8px 8px rgba(0, 0, 0, 0.25)
+  box-shadow: 0 8px 8px rgba(0, 0, 0, 0.25);
 }
 
 @media screen  and (max-width: 1440px) {
@@ -83,7 +98,7 @@
   .container{
     width: 100%;
     background-color: transparent;
-    gap: 0;
+    gap: 32px;
     box-shadow: none;
   }
 
@@ -100,8 +115,6 @@
   }
 
   .container .textos p{
-  font-size: 24px;
-  padding: 8px 0;
   font-weight: 400;
   line-height: 150%;
 }

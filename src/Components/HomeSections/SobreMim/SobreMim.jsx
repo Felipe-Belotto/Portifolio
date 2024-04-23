@@ -37,10 +37,17 @@ export default function SobreMim() {
      animate={isVisible ? "visible" : "hidden"}
      className={styles.sobreMim} style={{display: "flex", justifyContent: "center", alignItems: "center"}}>
       <div className={styles.container}>
+      <motion.img 
+        variants={imgVariants}
+             initial="hidden"
+             animate={isVisible ? "visible" : "hidden"}
+              src="perfil.png" alt="foto de perfil" className={styles.perfil}/>
         <div
           className={styles.conteudo}
         >
+          
           <div className={styles.textos}>
+             <div className={styles.titulo__container}>
             <motion.h1 variants={textVariants}
              initial="hidden"
              animate={isVisible ? "visible" : "hidden"}
@@ -50,11 +57,30 @@ export default function SobreMim() {
             initial="hidden"
             animate={isVisible ? "visible" : "hidden"}
             >Front-End Developer</motion.h2>
+            </div>
+
+            <div className={styles.descricao__container}>
+
             <motion.p
             variants={textVariants}
             initial="hidden"
             animate={isVisible ? "visible" : "hidden"}
-            >Tecnologia e design me movem! Sou um Desenvolvedor Front-End de Campinas que ama criar interfaces incríveis. Estudo Análise e Desenvolvimento de Sistemas e também design gráfico e motion design.</motion.p>
+            > Sou um jovem programador natural de Campinas-SP buscando aprimorar meus conhecimentos e aprender novas tecnologias para o desenvolvimento de projetos web. Apaixonado por Programação e Design, busco evoluir na área de programação além de também estudar Design Gráfico.</motion.p>
+           
+           <motion.p
+           variants={textVariants}
+           initial="hidden"
+           animate={isVisible ? "visible" : "hidden"}
+           ><strong>Ensino superior:</strong> Análise e desenvolvimento de sistemas (Segundo semestre).</motion.p>
+
+           <motion.p
+           variants={textVariants}
+           initial="hidden"
+           animate={isVisible ? "visible" : "hidden"}
+           ><strong>Formado pelo programa Oracle Next Education como Dev Junior React</strong></motion.p>
+            
+
+          </div> 
           </div>
 
           <motion.div 
@@ -69,13 +95,6 @@ export default function SobreMim() {
           </motion.div>
 
         </div>
-
-        <motion.img 
-        variants={imgVariants}
-             initial="hidden"
-             animate={isVisible ? "visible" : "hidden"}
-              src="perfil.png" alt="foto de perfil" className={styles.perfil}/>
-
       </div>
     </motion.section>
   );
