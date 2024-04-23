@@ -3,7 +3,7 @@ import React from 'react'
 import styles from './IconeTecnologia.module.css'
 
 export default function IconeTecnologia(props) {
-  const imagePath = "/"+ props.pasta+"/" + props.tecnologia+".png";
+  const imagePath = "/"+ props.pasta+"/" + props.tecnologia+".svg";
   const altText = `Ícone da tecnologia: `+ props.tecnologia;
   return (
     <div className={styles.icone} /* title={props.tecnologia} */>
