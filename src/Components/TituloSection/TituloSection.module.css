@@ -6,12 +6,12 @@
   line-height: 125%;
   display: flex;
   justify-content: center;
-  
   background: var(---titulo-primario);
   background-size: 400% 100% ;
   animation: degrade  10s linear infinite alternate ;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  font-weight: bold;
 }
 
 @keyframes degrade {

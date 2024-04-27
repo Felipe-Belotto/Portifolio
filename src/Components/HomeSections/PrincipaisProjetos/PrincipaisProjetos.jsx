@@ -18,6 +18,14 @@ export const ListaProjetosPrincipais = [
     "tecnologias": ["React", "Router Dom", "Material Ui"],
   },
   {
+    "nome": "Ficha cadastro",
+    "imagem": "/PrincipaisProjetos/FichaCadastro.png",
+    "descricao": "Criação de uma aplicação simples para cadastrar informações de clientes de uma imobiliaria e devolver um ficha completa em PDF.",
+    "github": "https://github.com/Felipe-Belotto/ficha-cadastro",
+    "deploy": "https://fc-felipe.vercel.app/",
+    "tecnologias": ["React","Material UI", "API CEP", "API CNPJ"],
+  },
+  {
     "nome": "To Do List",
     "imagem": "/PrincipaisProjetos/ToDoList.png",
     "descricao": "Organize sua vida com estilo! A To Do List é uma aplicação completa que te ajuda a gerenciar suas tarefas de forma eficiente e intuitiva. Crie listas personalizadas, defina prazos e prioridades, organize seus blocos de tarefas e acompanhe seu progresso com facilidade.",
@@ -33,14 +41,7 @@ export const ListaProjetosPrincipais = [
     "deploy": "https://documentacao-para-financiamento.vercel.app/",
     "tecnologias": ["Javascript"],
   },
-  {
-    "nome": "Cachorrinhos.com",
-    "imagem": "/PrincipaisProjetos/Cachorrinhos.png",
-    "descricao": "Descubra o mundo dos cachorros! O Cachorrinhos.com é um site completo que te ajuda a conhecer as raças mais populares do mundo. Explore por continente, visualize fotos e informações detalhadas, e encontre o companheiro ideal para você.",
-    "github": "https://github.com/Felipe-Belotto/CachorrosPontoCom",
-    "deploy": "https://cachorrinhos.vercel.app/",
-    "tecnologias": ["Javascript"],
-  }
+  
 ]
 
 export default function PrincipaisProjetos() {
