@@ -7,18 +7,18 @@
   padding: 32px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  /* justify-content: space-around; */
   align-items: center;
   gap: 32px;
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .container .conteudo{
-  width: 55%;
-  height: 500px;
+  width: calc(100% - 400px - 64px);
+  height: 300px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   gap: 64px;
 }
 
@@ -69,7 +69,7 @@
 }
 
 .container .perfil {
-  width: 550px;
+  width: 400px;
   border-radius: 8px;
   box-shadow: 0 8px 8px rgba(0, 0, 0, 0.25);
 }

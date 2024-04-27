@@ -14,7 +14,7 @@ export default function Home() {
       <div className={styles.Apresentacao__container}>
       <Apresentacao />
       </div>
-      <ScrollToTop smooth height="20px" color="white" style={{background:"linear-gradient(117deg, #7e24ff80 20%, #ff80fd 60%, rgba(126, 36, 255, 0.5) 80%, #ff80fd 100%)", boxShadow:"none"}}/>
+      <ScrollToTop smooth height="20px" color="white" style={{background:"black", boxShadow:"none", opacity:"0.5"}}/>
       <div className={styles.SobreMim__container}>
       <SobreMim />
       </div>

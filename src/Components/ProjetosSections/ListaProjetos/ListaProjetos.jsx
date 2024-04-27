@@ -10,21 +10,12 @@ export const ListaDosProjetos = [
     "tecnologias": ["React", "Router Dom", "Material Ui"],
   },
   {
-    "nome": "MKS Sitemas",
-    "imagem": "/TodosProjetos/mksdesafio.png",
-    "categoria": "Desafio",
-    "github": "https://github.com/Felipe-Belotto/mks-frontend-challenge",
-    "deploy": "https://mks-frontend-challenge-iota.vercel.app/",
-    "tecnologias": ["Next Js", "Typescript", "Tailwind"],
-  }
-  ,
-  {
-    "nome": "To Do List",
-    "imagem": "/PrincipaisProjetos/ToDoList.png",
+    "nome":"Ficha cadastro",
+    "imagem": "/TodosProjetos/fichacadastro.png",
     "categoria": "Pessoal",
-    "github": "https://github.com/Felipe-Belotto/To-Do-List",
-    "deploy": "https://fbelotto-to-do-list.vercel.app/",
-    "tecnologias": ["React","Material Ui"],
+    "github": "https://github.com/Felipe-Belotto/Ficha-Cadastro",
+    "deploy": "https://fc-felipe.vercel.app/",
+    "tecnologias": ["React-Js", "Material UI", "CEP", "CNPJ"],
   },
   {
     "nome": "Calculadora de documentação",
@@ -35,6 +26,22 @@ export const ListaDosProjetos = [
     "tecnologias": ["Javascript"],
   },
   {
+    "nome": "To Do List",
+    "imagem": "/PrincipaisProjetos/ToDoList.png",
+    "categoria": "Pessoal",
+    "github": "https://github.com/Felipe-Belotto/To-Do-List",
+    "deploy": "https://fbelotto-to-do-list.vercel.app/",
+    "tecnologias": ["React","Material Ui"],
+  },
+  {
+    "nome":"Quiz do Pedro",
+    "imagem": "/TodosProjetos/quizdopedro.png",
+    "categoria": "Pessoal",
+    "github": "https://github.com/Felipe-Belotto/Quiz-Do-Pedro",
+    "deploy": "https://quiz-pedro.vercel.app/",
+    "tecnologias": ["Javascript"],
+  },
+  {
     "nome": "Cachorrinhos.com",
     "imagem": "/PrincipaisProjetos/Cachorrinhos.png",
     "categoria": "Pessoal",
@@ -42,6 +49,23 @@ export const ListaDosProjetos = [
     "deploy": "https://cachorrinhos.vercel.app/",
     "tecnologias": ["Javascript"],
   },
+  {
+    "nome":"Portifolio",
+    "imagem": "/TodosProjetos/portifolio.png",
+    "categoria": "Pessoal",
+    "github": "https://github.com/Felipe-Belotto/Portifolio",
+    "deploy": "https://felipebelotto.vercel.app/",
+    "tecnologias": ["Next Js", "Material UI"],
+  },
+  {
+    "nome": "MKS Sitemas",
+    "imagem": "/TodosProjetos/mksdesafio.png",
+    "categoria": "Desafio",
+    "github": "https://github.com/Felipe-Belotto/mks-frontend-challenge",
+    "deploy": "https://mks-frontend-challenge-iota.vercel.app/",
+    "tecnologias": ["Next Js", "Typescript", "Tailwind"],
+  }
+  ,
   {
     "nome":"Meow Café",
     "imagem": "/TodosProjetos/meowcafe.png",
@@ -92,14 +116,6 @@ export const ListaDosProjetos = [
     "tecnologias": ["Next Js","Typescript", "Tailwind"],
   },
   {
-    "nome":"Ficha cadastro",
-    "imagem": "/TodosProjetos/fichacadastro.png",
-    "categoria": "Pessoal",
-    "github": "https://github.com/Felipe-Belotto/Ficha-Cadastro",
-    "deploy": "https://fc-felipe.vercel.app/",
-    "tecnologias": ["React-Js", "Material UI"],
-  },
-  {
     "nome":"Slaca 2019",
     "imagem": "/TodosProjetos/slaca.png",
     "categoria": "Desafio",
@@ -114,22 +130,6 @@ export const ListaDosProjetos = [
   "github": "https://github.com/Felipe-Belotto/Calculadora-IMC",
   "deploy": "https://indice-massa-corporal-azure.vercel.app/",
   "tecnologias": ["React Js", "Tailwind", "Typescript"],
-  },
-  {
-    "nome":"Quiz do Pedro",
-    "imagem": "/TodosProjetos/quizdopedro.png",
-    "categoria": "Pessoal",
-    "github": "https://github.com/Felipe-Belotto/Quiz-Do-Pedro",
-    "deploy": "https://quiz-pedro.vercel.app/",
-    "tecnologias": ["Javascript"],
-  },
-  {
-    "nome":"Portifolio",
-    "imagem": "/TodosProjetos/portifolio.png",
-    "categoria": "Pessoal",
-    "github": "https://github.com/Felipe-Belotto/Portifolio",
-    "deploy": "https://felipebelotto.vercel.app/",
-    "tecnologias": ["Next Js"],
   }
 ]
 
@@ -142,7 +142,7 @@ import ScrollToTop from "react-scroll-to-top";
 export default function ListaProjetos() {
   const listaTodosProjetos = ListaDosProjetos
   return (
-    <>    <ScrollToTop smooth height="20px" color="white" style={{background:"linear-gradient(117deg, #7e24ff80 20%, #ff80fd 60%, rgba(126, 36, 255, 0.5) 80%, #ff80fd 100%)", boxShadow:"none"}}/>
+    <>          <ScrollToTop smooth height="20px" color="white" style={{background:"black", boxShadow:"none", opacity:"0.5"}}/>
       <ul className={styles.projetos}>
         {listaTodosProjetos.map((projeto, index) => (
           <li key={index}>
